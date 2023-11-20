@@ -15,8 +15,8 @@ const Details = ({ status, search, setSearch }) => {
     status === MONIERING_STATUS.Pending ? PENDING_DATA : COMPLETED_DATA;
   return (
     <div>
-      <div>
-        <table className="w-full text-sm text-left rtl:text-right border ">
+      <div className="py-[1rem]">
+        <table className="w-full text-sm text-left border ">
           <thead className="text-xs   bg-gray-100">
             <tr>
               {Object.keys(DATA[0])
@@ -27,7 +27,7 @@ const Details = ({ status, search, setSearch }) => {
                     header !== "Email2"
                 )
                 .map((header) => (
-                  <th scope="col" className="px-7 py-3">
+                  <th scope="col" className="px-7 py-[0.6rem]">
                     {header}
                   </th>
                 ))}
@@ -40,38 +40,38 @@ const Details = ({ status, search, setSearch }) => {
                 : record.User.toLowerCase().includes(search);
             }).map((record) => (
               <tr className="bg-white border-b">
-                <td className="px-6 py-2">
+                <td className="px-5 py-2">
                   <UserName name={record.User} email={record.Email} />
                 </td>
-                <td className="px-6 py-2">
+                <td className="px-5 py-2">
                   <RiskLevel level={record["Risk level"]} />
                 </td>
                 {"Trigger Reason" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Trigger trigger={record["Trigger Reason"]} />
                   </td>
                 ) : null}
                 {"Action Reason" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Action action={record["Action Reason"]} />
                   </td>
                 ) : null}
                 {"In queue for" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Inqueue queue={record["In queue for"]} />
                   </td>
                 ) : null}
                 {"Time to close" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Inqueue queue={record["Time to close"]} />
                   </td>
                 ) : null}
-                <td className="px-6 py-2">
+                <td className="px-5 py-2">
                   <Dateadded date={record["Date added on"]} />
                 </td>
 
                 {"Previously reviewed" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Previous
                       val={record["Previously reviewed"]}
                       date={record.PRD}
@@ -79,7 +79,7 @@ const Details = ({ status, search, setSearch }) => {
                   </td>
                 ) : null}
                 {"Action taken by" in record ? (
-                  <td className="px-6 py-2">
+                  <td className="px-5 py-2">
                     <Actiontaken
                       name={record["Action taken by"]}
                       email={record.Email2}

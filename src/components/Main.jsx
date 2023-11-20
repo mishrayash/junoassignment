@@ -8,7 +8,7 @@ import { MONIERING_STATUS } from "../constants";
 const Main = () => {
   const [status, setStatus] = useState(MONIERING_STATUS.Pending);
   return (
-    <div className="pt-10 pr-20 pl-20 pb-20 ">
+    <div className="pt-[3rem] pr-[5rem] pl-[5rem] pb-[4rem] ">
       <div className="text-3xl font-semibold ">Monitoring</div>
       <Nav status={status} setStatus={setStatus} />
       <div className="h-[2px] bg-slate-200 rounded-sm flex flex-row">

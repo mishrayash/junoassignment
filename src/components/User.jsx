@@ -5,8 +5,8 @@ import Details from "./Details";
 const User = ({ status }) => {
   const [search, setSearch] = useState("");
   return (
-    <div className="pt-10  ">
-      <div className="flex flex-row pb-[0.5rem] ">
+    <div className="pt-[2rem] ">
+      <div className="flex flex-row pb-[0.5rem] rounded-md">
         <Search search={search} setSearch={setSearch} />
         <div className="flex flex-row px-[1rem]">
           <button
@@ -14,7 +14,7 @@ const User = ({ status }) => {
             className="px-[1rem] pb-1 bg-gray-100 rounded-md text-gray-400 text-sm font-medium w-[9rem]"
           >
             <svg
-              class="w-[0.6rem]  relative left-[108px] top-[14px] text-gray-800 text-gray-400"
+              class="w-[0.5rem]  font-medium relative left-[108px] top-[14px] text-gray-400 text-gray-400"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,10 +32,10 @@ const User = ({ status }) => {
           </button>
           <button
             type="button"
-            className=" pb-1 bg-gray-100 rounded-md text-gray-400 text-sm font-medium w-[9rem] ml-[1rem]"
+            className=" pb-2 pr-2 bg-gray-100 rounded-md text-gray-400 text-sm font-medium w-[8rem] ml-[1rem] text-center"
           >
             <svg
-              class="w-[0.5rem] h-2 relative left-[110px] top-[15px] text-gray-400 text-gray-400"
+              class="w-[0.4rem] h-2 relative left-[100px] top-[15px] text-gray-400 text-gray-400"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

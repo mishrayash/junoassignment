@@ -1,20 +1,30 @@
 # Juno Monitoring
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site Link : https://junoassignment.vercel.app/
 
 ## Priview
 
-![Screenshot (62)](https://github.com/mishrayash/junoassignment/assets/80852441/d3552529-971f-47f1-a1a6-42deed692497)
+![Screenshot (65)](https://github.com/mishrayash/junoassignment/assets/80852441/fcca6923-e243-4b3f-8e72-1ac29c9f2c03)
 
-![Screenshot (61)](https://github.com/mishrayash/junoassignment/assets/80852441/8d3aa4e8-0b55-499f-91d5-a011da84803d)
+![Screenshot (66)](https://github.com/mishrayash/junoassignment/assets/80852441/f948c849-c0a6-4aa2-ae6e-c65156b46416)
 
-![Screenshot (63)](https://github.com/mishrayash/junoassignment/assets/80852441/7014cf4d-abf9-4e11-b282-476b9ef61e8e)
+![Screenshot (67)](https://github.com/mishrayash/junoassignment/assets/80852441/97ec6298-25ca-4f47-bcab-02c418736f23)
 
-![Screenshot (64)](https://github.com/mishrayash/junoassignment/assets/80852441/5a9cf9ee-ab4c-4466-add0-855265f14876)
-
+![Screenshot (68)](https://github.com/mishrayash/junoassignment/assets/80852441/1ebbc4dc-7876-47de-b141-05548480379f)
 
 ## Features Added
-1) Pending and Completed
+1) Pending and Completed States 
+2) Search Filter to filter based on names
+3) Close account with Pop up Feature
+4) Dynamic Rendering of the Users
+5) Vercel is used for deploying
+
+## Techologies Used
+1) HTML
+2) Tailwind CSS
+3) Javascript
+4) React.js
+
 ## Available Scripts
 
 In the project directory, you can run:
